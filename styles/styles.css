@@ -968,8 +968,8 @@ body.light-mode .copyright {
     }
     
     .cube-container {
-        height: 200px;
-        margin-top: 40px;
+        height: 00px;
+        margin-top: 120px;
     }
     
     .skills-grid, .projects-grid {
@@ -984,7 +984,7 @@ body.light-mode .copyright {
         display: block;
         margin: 10px auto;
         width: 80%;
-        max-width: 300px;
+        max-width: 350px;
     }
     
     .btn-outline {
