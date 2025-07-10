@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moheb Jami | Mobile Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script>
+        (function(){
+          emailjs.init("apAR5FTAu1wmcg_Rb");
+        })();
+      </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="glass">
+        <a href="#" class="logo"><i class="fas fa-mobile-alt"></i> Moheb Jami</a>
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><div class="container">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <!-- SVG Icons -->
+                    <svg class="icon sun" viewBox="0 0 24 24">
+                        <path d="M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5S14.76,7,12,7z M12,16c-2.21,0-4-1.79-4-4s1.79-4,4-4s4,1.79,4,4 S14.21,16,12,16z M12,3L12,3l-3,1.5l3,1.5l-1.5-3L12,3z M12,21l1.5,3L12,21l3-1.5L12,21z M3,12l3,1.5l-1.5-3l1.5-3L3,12z M21,12 l-1.5-3l-1.5,3l1.5,3L21,12z M6.5,17.5L5,21l3-1.5l-1.5-3L6.5,17.5z M17.5,6.5L19,3l-3,1.5l1.5,3L17.5,6.5z"/>
+                    </svg>
+                    <svg class="icon moon" viewBox="0 0 24 24">
+                        <path d="M20.21,15.32A8.56,8.56,0,1,1,11.29,3.5a.5.5,0,0,1,.51.28.49.49,0,0,1-.09.57A6.46,6.46,0,0,0,9.8,9a6.57,6.57,0,0,0,9.71,5.72.52.52,0,0,1,.58.07A.52.52,0,0,1,20.21,15.32Z"/>
+                    </svg>
+                </button>
+            </div></li>
+        </ul>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content glass" style="padding: 40px;">
+            <h1>From Vision to Touch <span>I Build Mobile Magic</span></h1>
+            <p>With a passion for performance and precision, I design and develop stunning cross-platform mobile apps that don’t just look good — they feel right. Elegant UIs, solid architectures, and seamless user experiences, all crafted to turn your ideas into intuitive, high-impact digital realities.</p>
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+        <div class="hero-phone" id="phone-container">
+            <div class="phone-container">
+                <div class="phone-frame">
+                    <!-- Front Screen -->
+                    <div class="phone-screen">
+                        <div style="background: linear-gradient(135deg, #e74c3c, #3498db); width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px; box-sizing: border-box; border-radius: 37px;">
+                            <div style="font-size: 1.8rem; margin-bottom: 20px; font-weight: bold;">Moheb Jami</div>
+                            <div style="font-size: 1.2rem; margin-bottom: 30px;">Mobile Developer</div>
+                            <div style="display: flex; gap: 15px;">
+                                <i class="fab fa-apple" style="font-size: 2rem;"></i>
+                                <i class="fab fa-android" style="font-size: 2rem;"></i>
+                                <span style="display: inline-block; width: 2rem; height: 2rem;">
+                                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/flutter.svg" alt="Flutter"
+                                         style="width: 100%; height: 100%; filter: brightness(0) invert(1);">
+                                  </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Dynamic Island -->
+                    <div class="dynamic-island">
+                        <div class="camera-cutout"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text glass" style="padding: 40px;">
+                <h3>Innovative Mobile Developer</h3>
+                <ul>
+                    <li> 🔭 I’m currently working on: Listoli </li>
+                    <li> 🤝 I’m looking to collaborate on: Flutter projects involving advanced database management, custom widgets, or multi-platform functionality.</li>
+                    <li> 🛠 I’m looking for help with: Improving performance in Flutter apps, integrating advanced animations, and enhancing accessibility in Persian-language apps.</li>
+                    <li> 🌱 I’m currently learning: State management techniques in Flutter, advanced animations, and backend integrations with Firebase and SQLite.</li>
+                    <li> 💬 Ask me about: Flutter development, SQLite database operations, Persian-language app localization, and creating custom UI components in Flutter.</li>
+                </ul>
+                <a href="https://drive.google.com/file/d/1zjE_N4sId-DdGzSuUZ2hLTT7wbMhXxgk/view?usp=sharing" class="btn">Download Resume</a>
+            </div>
+            <div class="cube-container glass" style="display: flex; justify-content: center; align-items: center;">
+                <div class="cube">
+                    <div class="cube-face"><i class="fab fa-apple"></i></div>
+                    <div class="cube-face"><i class="fab fa-android"></i></div>
+                    <div class="cube-face"><i class="fab fa-swift"></i></div>
+                    <div class="cube-face"><span style="display: inline-block; width: 2rem; height: 2rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="48px" height="48px" fill-rule="nonzero"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M26,4l-20,20l6,6l26,-26z" fill="#fa5252"></path><path d="M38,22l-11,11l-6,-6l5,-5z" fill="#fa5252"></path><rect x="-12.72895" y="33.94062" transform="rotate(-45.001)" width="8.485" height="8.485" fill="#e74c3c"></rect><path d="M38,44h-12l-5,-5l6,-6z" fill="#e74c3c"></path><path d="M21,39l9,-3l-3,-3z" fill="#e74c3c"></path></g></g></svg>
+                      </span></div>
+                    <div class="cube-face"><i class="fas fa-code"></i></div>
+                    <div class="cube-face"><i class="fa-solid fa-database"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+           
+            <div class="skill-card glass">
+                <span style="display: inline-block; width: 2rem; height: 2rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="48px" height="48px" fill-rule="nonzero"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M26,4l-20,20l6,6l26,-26z" fill="#fa5252"></path><path d="M38,22l-11,11l-6,-6l5,-5z" fill="#fa5252"></path><rect x="-12.72895" y="33.94062" transform="rotate(-45.001)" width="8.485" height="8.485" fill="#e74c3c"></rect><path d="M38,44h-12l-5,-5l6,-6z" fill="#e74c3c"></path><path d="M21,39l9,-3l-3,-3z" fill="#e74c3c"></path></g></g></svg>
+                  </span>
+                <h3>Cross-Platform</h3>
+                <p>Flutter, Dart, JavaScript, TypeScript, Firebase</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="85%"></div>
+                </div>
+            </div>
+            <div class="skill-card glass">
+                <i class="fas fa-server"></i>
+                <h3>Backend & APIs</h3>
+                <p>RESTful APIs, Node.js, Firebase, MongoDB, SQLite, MySql, Authentication</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="80%"></div>
+                </div>
+            </div>
+            <div class="skill-card glass">
+                <i class="fas fa-paint-brush"></i>
+                <h3>UI/UX Design</h3>
+                <p>Figma, Material Design, photoshop, corel draw </p>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="85%"></div>
+                </div>
+            </div>
+            <div class="skill-card glass">
+                <i class="fas fa-code-branch"></i>
+                <h3>DevOps & Tools</h3>
+                <p>Git, GitHub, Jira</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="75%"></div>
+                </div>
+            </div>
+            <div class="skill-card glass">
+                <i class="fas fa-code"></i>
+                <h3>Web development</h3>
+                <p>Html5, Css3, bootstrap, tailwind css, JavaScript, , </p>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="75%"></div>
+                </div>
+            </div>
+            <div class="skill-card glass">
+                <i class="fa-solid fa-globe"></i>
+                <h3>Other language & framework</h3>
+                <p>Java, C++, Python, php, Laravel, ReactJS, NuxtJS</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="75%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card glass">
+                <div class="project-img"><img src="assets/awatarapp.png" alt="Screenshot" width="100%" height="100%"></div>
+                <div class="project-content">
+                    <h3>Car Sales - Finance Manager</h3>
+                    <p>Awatar Auto Shipping helps manage car sales and finances with ease. Track vehicle deliveries, view details instantly, and stay organized—perfect for dealers and finance teams handling multiple shipments.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Dart</span>
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">MySql</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card glass">
+                <div class="project-img"><img src="assets/football.png" alt="Screenshot" width="100%" height="100%"></div>
+                <div class="project-content">
+                    <h3>Team management - Finance Manager</h3>
+                    <p>Mottahed Futsal Academy app helps manage player registration, team lists, and debt tracking. Designed for futsal teams, it simplifies admin tasks and boosts team organization in one easy platform.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Dart</span>
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Firebase</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card glass">
+                <!-- mediaPlayer.png -->
+                <div class="project-img"><img src="assets/mediaPlayer.png" alt="Screenshot" width="100%" height="100%"></div>
+                <div class="project-content">
+                    <h3>StreamEase - Media Player</h3>
+                    <p>This Media Player app offers a smooth and stylish experience for watching videos and listening to audio. With intuitive controls, equalizer access, and sleek UI, it’s perfect for modern playback.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Dart</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content glass" style="padding: 40px;">
+            <p>Have a project in mind or want to discuss potential opportunities? Feel free to reach out!</p>
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="from_name" placeholder=" ">
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="from_email" placeholder=" ">
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" placeholder=" ">
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder=" "></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="glass">
+        <div class="social-links">
+            <a href="https://github.com/Mohebjami"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/moheb-jami-603381178"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="copyright">© 2025 Moheb Jami. All rights reserved.</p>
+    </footer>
+
+        <!-- Link external script -->
+        <script src="js/script.js"></script>
+        <script src="js/dart.js"></script>
+
+</body>
+
+</html>
