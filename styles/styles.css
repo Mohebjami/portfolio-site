@@ -983,8 +983,9 @@ body.light-mode .copyright {
     .btn {
         display: block;
         margin: 10px auto;
-        width: 80%;
-        max-width: 350px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     
     .btn-outline {
