@@ -603,7 +603,7 @@ body.light-mode .project-card {
 }
 
 .project-card:hover {
-    transform: perspective(1000px) rotateY(10deg);
+    transform: scale(1.1);
 }
 
 .project-img {

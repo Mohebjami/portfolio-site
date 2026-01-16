@@ -1,7 +1,3 @@
-console.log("✅ script.js is loaded!");
-
-
-
   document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
 
