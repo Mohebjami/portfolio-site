@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moheb Jami | Mobile Developer</title>
+    <title>Moheb Jami — Mobile Product Engineer</title>
+    <meta name="description" content="Portfolio of Moheb Jami, a Flutter-focused mobile product engineer building polished, high-impact digital experiences.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <link rel="stylesheet" href="styles/styles.css">
@@ -18,9 +19,9 @@
 <body>
 
     <!-- Header -->
-    <header class="glass">
+    <header class="glass" aria-label="Primary navigation">
         <a href="#" class="logo"><i class="fas fa-mobile-alt"></i> Moheb Jami</a>
-        <button class="mobile-menu-btn">
+        <button class="mobile-menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false">
             <i class="fas fa-bars"></i>
         </button>
         <ul class="nav-links">
@@ -43,25 +44,34 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content glass" style="padding: 40px;">
-            <h1>From Vision to Touch <span>I Build Mobile Magic</span></h1>
+        <div class="hero-content glass">
+            <div class="hero-kicker"><span class="kicker-dot"></span> Mobile product engineer</div>
+            <h1>From vision to touch <span>I build mobile magic.</span></h1>
             <p>With a passion for performance and precision, I design and develop stunning cross-platform mobile apps that don’t just look good — they feel right. Elegant UIs, solid architectures, and seamless user experiences, all crafted to turn your ideas into intuitive, high-impact digital realities.</p>
-            <a href="#projects" class="btn">View My Work</a>
-            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            <div class="hero-actions">
+                <a href="#projects" class="btn">View my work <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                <a href="#contact" class="btn btn-outline">Let’s talk</a>
+            </div>
+            <div class="hero-proof" aria-label="Professional highlights">
+                <span><strong>4</strong> shipped products</span>
+                <span><strong>Flutter</strong> specialist</span>
+                <span><strong>Worldwide</strong> availability</span>
+            </div>
         </div>
         <div class="hero-phone" id="phone-container">
             <div class="phone-container">
                 <div class="phone-frame">
                     <div class="phone-screen">
-                        <div style="background: linear-gradient(135deg, #e74c3c, #3498db); width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px; box-sizing: border-box; border-radius: 37px;">
-                            <div style="font-size: 1.8rem; margin-bottom: 20px; font-weight: bold;">Moheb Jami</div>
-                            <div style="font-size: 1.2rem; margin-bottom: 30px;">Mobile Developer</div>
-                            <div style="display: flex; gap: 15px;">
-                                <i class="fab fa-apple" style="font-size: 2rem;"></i>
-                                <i class="fab fa-android" style="font-size: 2rem;"></i>
-                                <span style="display: inline-block; width: 2rem; height: 2rem;">
+                        <div class="phone-screen-content">
+                            <span class="phone-screen-label">BUILD / SHIP / REPEAT</span>
+                            <div class="phone-screen-name">Moheb Jami</div>
+                            <div class="phone-screen-role">Mobile developer</div>
+                            <div class="phone-screen-icons">
+                                <i class="fab fa-apple" aria-hidden="true"></i>
+                                <i class="fab fa-android" aria-hidden="true"></i>
+                                <span class="flutter-mark">
                                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/flutter.svg" alt="Flutter"
-                                         style="width: 100%; height: 100%; filter: brightness(0) invert(1);">
+                                         >
                                   </span>
                             </div>
                         </div>
@@ -80,18 +90,18 @@
     <section id="about" class="section">
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
-            <div class="about-text glass" style="padding: 40px;">
+            <div class="about-text glass">
                 <h3>Innovative Mobile Developer</h3>
                 <ul>
-                    <li> 🔭 I’m currently working on: Listoli </li>
-                    <li> 🤝 I’m looking to collaborate on: Flutter projects involving advanced database management, custom widgets, or multi-platform functionality.</li>
-                    <li> 🛠 I’m looking for help with: Improving performance in Flutter apps, integrating advanced animations, and enhancing accessibility in Persian-language apps.</li>
-                    <li> 🌱 I’m currently learning: State management techniques in Flutter, advanced animations, and backend integrations with Firebase and SQLite.</li>
-                    <li> 💬 Ask me about: Flutter development, SQLite database operations, Persian-language app localization, and creating custom UI components in Flutter.</li>
+                    <li><strong>Currently building:</strong> Listoli.</li>
+                    <li><strong>Open to:</strong> Flutter products involving advanced data, custom widgets, and multi-platform functionality.</li>
+                    <li><strong>Focused on:</strong> Performance, motion, and accessible Persian-language experiences.</li>
+                    <li><strong>Learning:</strong> State management, advanced animation, and Firebase / SQLite integrations.</li>
+                    <li><strong>Ask me about:</strong> Flutter architecture, localization, data operations, and custom UI components.</li>
                 </ul>
                 <a href="https://drive.google.com/file/d/1DyuJFTQyoXNscTXIZwV2ydFCGC_PQGJZ/view?usp=drive_link" class="btn">Download Resume</a>
             </div>
-            <div class="cube-container glass" style="display: flex; justify-content: center; align-items: center;">
+            <div class="cube-container glass">
                 <div class="cube">
                     <div class="cube-face"><i class="fab fa-apple"></i></div>
                     <div class="cube-face"><i class="fab fa-android"></i></div>
@@ -172,70 +182,114 @@
 
     <!-- Projects Section -->
     <section id="projects" class="section">
-        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-heading">
+            <div>
+                <span class="section-kicker">Selected work · Mobile products</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <p>A handful of products I’ve shaped from first screen to shipped experience—built to be useful, fast, and easy to trust.</p>
+        </div>
         <div class="projects-grid">
-            <div class="project-card glass">
-                <div class="project-img"><img src="assets/mkl.png" alt="Screenshot" width="100%" height="100%"></div>
+            <article class="project-card project-card--featured glass">
+                <div class="project-gallery" aria-label="MKL Shipping screenshots">
+                    <button class="project-shot project-shot-featured" type="button" data-project="mkl" data-image="assets/mkl/cover.jpg" data-alt="MKL Shipping cover screenshot">
+                        <img src="assets/mkl/cover.jpg" alt="MKL Shipping cover screenshot" loading="eager">
+                        <span><i class="fas fa-expand-alt" aria-hidden="true"></i> View all screenshots</span>
+                    </button>
+                    <button class="project-shot" type="button" data-project="mkl" data-image="assets/mkl/mkl1.jpg" data-alt="MKL Shipping vehicle screen"><img src="assets/mkl/mkl1.jpg" alt="MKL Shipping vehicle screen" loading="lazy"></button>
+                    <button class="project-shot" type="button" data-project="mkl" data-image="assets/mkl/IMAGE%202026-08-30%2000%3A46%3A03.jpg" data-alt="MKL Shipping shipping screen"><img src="assets/mkl/IMAGE%202026-08-30%2000%3A46%3A03.jpg" alt="MKL Shipping shipping screen" loading="lazy"></button>
+                    <button class="project-shot" type="button" data-project="mkl" data-image="assets/mkl/IMAGE%202026-08-30%2000%3A46%3A14.jpg" data-alt="MKL Shipping finance screen"><img src="assets/mkl/IMAGE%202026-08-30%2000%3A46%3A14.jpg" alt="MKL Shipping finance screen" loading="lazy"></button>
+                </div>
                 <div class="project-content">
-                    <h3>Car Sales - Finance Manager</h3>
+                    <div class="project-card-meta"><span class="project-index">01 / 04</span><span class="project-status"><i class="fas fa-circle" aria-hidden="true"></i> Live on the App Store</span></div>
+                    <p class="project-type">Vehicle auctions, shipping &amp; finance</p>
+                    <h3>MKL Shipping</h3>
                     <p>The MKL Shipping app streamlines buying and selling vehicles from U.S. auctions by providing access to auctions, real-time vehicle tracking, shipping management, insurance, and financial records—all in one fast, transparent, and reliable platform.</p>
+                    <ul class="project-details">
+                        <li>U.S. auction access and vehicle tracking</li>
+                        <li>Shipping, insurance, and financial records in one place</li>
+                    </ul>
                     <div class="tech-tags">
-                        <span class="tech-tag">Dart</span>
-                        <span class="tech-tag">Flutter</span>
-                        <span class="tech-tag">Laravel</span>
-                        <span class="tech-tag">MySql</span>
+                        <span class="tech-tag">Dart</span><span class="tech-tag">Flutter</span><span class="tech-tag">Laravel</span><span class="tech-tag">MySQL</span>
                     </div>
+                    <button class="project-view-button" type="button" data-project-trigger="mkl">Explore project <i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+                    <a class="project-store-link" href="https://apps.apple.com/app/id6757349993" target="_blank" rel="noopener noreferrer"><i class="fab fa-apple" aria-hidden="true"></i> View on the App Store <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                 </div>
-            </div>
-            <div class="project-card glass">
-                <div class="project-img"><img src="assets/janan.png" alt="Screenshot" width="100%" height="100%"></div>
+            </article>
+
+            <article class="project-card glass">
+                <div class="project-gallery" aria-label="Janan Group screenshots">
+                    <button class="project-shot project-shot-featured" type="button" data-project="janangroup" data-image="assets/janangroup/cover.jpg" data-alt="Janan Group cover screenshot"><img src="assets/janangroup/cover.jpg" alt="Janan Group cover screenshot" loading="lazy"><span><i class="fas fa-expand-alt" aria-hidden="true"></i> View all screenshots</span></button>
+                    <button class="project-shot" type="button" data-project="janangroup" data-image="assets/janangroup/IMAGE%202026-08-30%2001%3A08%3A44.jpg" data-alt="Janan Group shipping screen"><img src="assets/janangroup/IMAGE%202026-08-30%2001%3A08%3A44.jpg" alt="Janan Group shipping screen" loading="lazy"></button>
+                    <button class="project-shot" type="button" data-project="janangroup" data-image="assets/janangroup/IMAGE%202026-08-30%2001%3A08%3A46.jpg" data-alt="Janan Group vehicle screen"><img src="assets/janangroup/IMAGE%202026-08-30%2001%3A08%3A46.jpg" alt="Janan Group vehicle screen" loading="lazy"></button>
+                    <button class="project-shot" type="button" data-project="janangroup" data-image="assets/janangroup/IMAGE%202026-08-30%2001%3A08%3A48.jpg" data-alt="Janan Group tracking screen"><img src="assets/janangroup/IMAGE%202026-08-30%2001%3A08%3A48.jpg" alt="Janan Group tracking screen" loading="lazy"></button>
+                </div>
                 <div class="project-content">
-                    <h3>Car Sales - Finance Manager</h3>
+                    <div class="project-card-meta"><span class="project-index">02 / 04</span><span class="project-status"><i class="fas fa-circle" aria-hidden="true"></i> Live on the App Store</span></div>
+                    <p class="project-type">International vehicle shipping</p>
+                    <h3>Janan General Trading</h3>
                     <p>JANAN GENERAL TRADING provides a simple and reliable app for international car shipping from the USA and UAE to Afghanistan and other Asian countries, offering instant quotes, real-time tracking, flexible shipping options, and full support for safe and on-time vehicle delivery.</p>
+                    <ul class="project-details">
+                        <li>Instant quotes and flexible shipping options</li>
+                        <li>Real-time shipment updates and delivery support</li>
+                    </ul>
                     <div class="tech-tags">
-                        <span class="tech-tag">Dart</span>
-                        <span class="tech-tag">Flutter</span>
-                        <span class="tech-tag">Laravel</span>
-                        <span class="tech-tag">MySql</span>
+                        <span class="tech-tag">Dart</span><span class="tech-tag">Flutter</span><span class="tech-tag">Laravel</span><span class="tech-tag">MySQL</span>
                     </div>
+                    <button class="project-view-button" type="button" data-project-trigger="janangroup">Explore project <i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+                    <a class="project-store-link" href="https://apps.apple.com/app/id6751919954" target="_blank" rel="noopener noreferrer"><i class="fab fa-apple" aria-hidden="true"></i> View on the App Store <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                 </div>
-            </div>
-            <div class="project-card glass">
-                <div class="project-img"><img src="assets/awatarapp.png" alt="Screenshot" width="100%" height="100%"></div>
+            </article>
+
+            <article class="project-card glass">
+                <div class="project-gallery" aria-label="Awtar Auto Shipping screenshots">
+                    <button class="project-shot project-shot-featured" type="button" data-project="awtar" data-image="assets/awtar/cover.jpg" data-alt="Awtar Auto Shipping cover screenshot"><img src="assets/awtar/cover.jpg" alt="Awtar Auto Shipping cover screenshot" loading="lazy"><span><i class="fas fa-expand-alt" aria-hidden="true"></i> View all screenshots</span></button>
+                    <button class="project-shot" type="button" data-project="awtar" data-image="assets/awtar/IMAGE%202026-08-30%2001%3A02%3A00.jpg" data-alt="Awtar Auto Shipping vehicle screen"><img src="assets/awtar/IMAGE%202026-08-30%2001%3A02%3A00.jpg" alt="Awtar Auto Shipping vehicle screen" loading="lazy"></button>
+                    <button class="project-shot" type="button" data-project="awtar" data-image="assets/awtar/IMAGE%202026-08-30%2001%3A02%3A05.jpg" data-alt="Awtar Auto Shipping tracking screen"><img src="assets/awtar/IMAGE%202026-08-30%2001%3A02%3A05.jpg" alt="Awtar Auto Shipping tracking screen" loading="lazy"></button>
+                    <button class="project-shot" type="button" data-project="awtar" data-image="assets/awtar/IMAGE%202026-08-30%2001%3A02%3A08.jpg" data-alt="Awtar Auto Shipping balance screen"><img src="assets/awtar/IMAGE%202026-08-30%2001%3A02%3A08.jpg" alt="Awtar Auto Shipping balance screen" loading="lazy"></button>
+                    <button class="project-shot" type="button" data-project="awtar" data-image="assets/awtar/IMAGE%202026-08-30%2001%3A02%3A11.jpg" data-alt="Awtar Auto Shipping account screen"><img src="assets/awtar/IMAGE%202026-08-30%2001%3A02%3A11.jpg" alt="Awtar Auto Shipping account screen" loading="lazy"></button>
+                    <button class="project-shot" type="button" data-project="awtar" data-image="assets/awtar/IMAGE%202026-08-30%2001%3A02%3A15.jpg" data-alt="Awtar Auto Shipping details screen"><img src="assets/awtar/IMAGE%202026-08-30%2001%3A02%3A15.jpg" alt="Awtar Auto Shipping details screen" loading="lazy"></button>
+                </div>
                 <div class="project-content">
-                    <h3>Car Sales - Finance Manager</h3>
-                    <p>Awatar Auto Shipping helps manage car sales and finances with ease. Track vehicle deliveries, view details instantly, and stay organized—perfect for dealers and finance teams handling multiple shipments.</p>
+                    <div class="project-card-meta"><span class="project-index">03 / 04</span><span class="project-status"><i class="fas fa-circle" aria-hidden="true"></i> Live on the App Store</span></div>
+                    <p class="project-type">Vehicle sales &amp; finance management</p>
+                    <h3>Awtar Auto Shipping</h3>
+                    <p>Awtar Auto Shipping helps manage car sales and finances with ease. Track vehicle deliveries, view details instantly, and stay organized—perfect for dealers and finance teams handling multiple shipments.</p>
+                    <ul class="project-details">
+                        <li>Quick vehicle-delivery tracking</li>
+                        <li>Clear sales and finance information for every shipment</li>
+                    </ul>
                     <div class="tech-tags">
-                        <span class="tech-tag">Dart</span>
-                        <span class="tech-tag">Flutter</span>
-                        <span class="tech-tag">Laravel</span>
-                        <span class="tech-tag">MySql</span>
+                        <span class="tech-tag">Dart</span><span class="tech-tag">Flutter</span><span class="tech-tag">Laravel</span><span class="tech-tag">MySQL</span>
                     </div>
+                    <button class="project-view-button" type="button" data-project-trigger="awtar">Explore project <i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+                    <a class="project-store-link" href="https://apps.apple.com/app/id6796391292" target="_blank" rel="noopener noreferrer"><i class="fab fa-apple" aria-hidden="true"></i> View on the App Store <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                 </div>
-            </div>
-            <div class="project-card glass">
-                <div class="project-img"><img src="assets/football.png" alt="Screenshot" width="100%" height="100%"></div>
+            </article>
+
+            <article class="project-card glass">
+                <div class="project-gallery" aria-label="Mottahed Futsal Academy screenshots">
+                    <button class="project-shot project-shot-featured" type="button" data-project="football" data-image="assets/football/cover.jpg" data-alt="Mottahed Futsal Academy cover screenshot"><img src="assets/football/cover.jpg" alt="Mottahed Futsal Academy cover screenshot" loading="lazy"><span><i class="fas fa-expand-alt" aria-hidden="true"></i> View all screenshots</span></button>
+                    <button class="project-shot" type="button" data-project="football" data-image="assets/football/IMAGE%202026-08-30%2001%3A02%3A52.jpg" data-alt="Mottahed Futsal Academy team screen"><img src="assets/football/IMAGE%202026-08-30%2001%3A02%3A52.jpg" alt="Mottahed Futsal Academy team screen" loading="lazy"></button>
+                    <button class="project-shot" type="button" data-project="football" data-image="assets/football/IMAGE%202026-08-30%2001%3A02%3A55.jpg" data-alt="Mottahed Futsal Academy player screen"><img src="assets/football/IMAGE%202026-08-30%2001%3A02%3A55.jpg" alt="Mottahed Futsal Academy player screen" loading="lazy"></button>
+                    <button class="project-shot" type="button" data-project="football" data-image="assets/football/IMAGE%202026-08-30%2001%3A02%3A57.jpg" data-alt="Mottahed Futsal Academy attendance screen"><img src="assets/football/IMAGE%202026-08-30%2001%3A02%3A57.jpg" alt="Mottahed Futsal Academy attendance screen" loading="lazy"></button>
+                    <button class="project-shot" type="button" data-project="football" data-image="assets/football/IMAGE%202026-08-30%2001%3A02%3A58.jpg" data-alt="Mottahed Futsal Academy finance screen"><img src="assets/football/IMAGE%202026-08-30%2001%3A02%3A58.jpg" alt="Mottahed Futsal Academy finance screen" loading="lazy"></button>
+                </div>
                 <div class="project-content">
-                    <h3>Team management - Finance Manager</h3>
-                    <p>Mottahed Futsal Academy app helps manage player registration, team lists, and debt tracking. Designed for futsal teams, it simplifies admin tasks and boosts team organization in one easy platform.</p>
+                    <div class="project-card-meta"><span class="project-index">04 / 04</span><span class="project-status project-status--private"><i class="fas fa-circle" aria-hidden="true"></i> Private product</span></div>
+                    <p class="project-type">Team and finance management</p>
+                    <h3>Mottahed Futsal Academy</h3>
+                    <p>Mottahed Futsal Academy helps manage player registration, team lists, and debt tracking. Designed for futsal teams, it simplifies admin tasks and boosts team organization in one easy platform.</p>
+                    <ul class="project-details">
+                        <li>Player registration and up-to-date team lists</li>
+                        <li>Simple debt tracking for academy administration</li>
+                    </ul>
                     <div class="tech-tags">
-                        <span class="tech-tag">Dart</span>
-                        <span class="tech-tag">Flutter</span>
-                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Dart</span><span class="tech-tag">Flutter</span><span class="tech-tag">Firebase</span>
                     </div>
+                    <button class="project-view-button" type="button" data-project-trigger="football">Explore project <i class="fas fa-arrow-right" aria-hidden="true"></i></button>
                 </div>
-            </div>
-            <div class="project-card glass">
-                <div class="project-img"><img src="assets/mediaPlayer.png" alt="Screenshot" width="100%" height="100%"></div>
-                <div class="project-content">
-                    <h3>StreamEase - Media Player</h3>
-                    <p>This Media Player app offers a smooth and stylish experience for watching videos and listening to audio. With intuitive controls, equalizer access, and sleek UI, it’s perfect for modern playback.</p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Flutter</span>
-                        <span class="tech-tag">Dart</span>
-                    </div>
-                </div>
-            </div>
+            </article>
         </div>
     </section>
         
@@ -243,8 +297,14 @@
     <!-- Contact Section -->
     <section id="contact" class="section contact">
         <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-content glass" style="padding: 40px;">
-            <p>Have a project in mind or want to discuss potential opportunities? Feel free to reach out!</p>
+        <div class="contact-content glass">
+            <div class="contact-heading">
+                <div>
+                    <span class="contact-label">Start a conversation</span>
+                    <h3>Have a product idea?</h3>
+                </div>
+                <p>Tell me what you’re building, where you’re stuck, or what you want to explore. I’ll get back to you soon.</p>
+            </div>
             <form class="contact-form" id="contact-form">
                 <div class="form-group">
                     <input type="text" id="name" name="message" placeholder=" ">
@@ -275,6 +335,17 @@
         </div>
         <p class="copyright">© 2025 Moheb Jami. All rights reserved.</p>
     </footer>
+
+    <div class="screenshot-modal" id="screenshot-modal" role="dialog" aria-modal="true" aria-label="Project screenshots" aria-hidden="true">
+        <button class="screenshot-modal-close" type="button" aria-label="Close screenshot viewer"><i class="fas fa-times" aria-hidden="true"></i></button>
+        <button class="screenshot-modal-nav screenshot-modal-prev" type="button" aria-label="Previous screenshot"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+        <figure>
+            <img id="screenshot-modal-image" src="" alt="">
+            <figcaption id="screenshot-modal-caption"></figcaption>
+            <div class="screenshot-modal-thumbnails" id="screenshot-modal-thumbnails" role="tablist" aria-label="All project screenshots"></div>
+        </figure>
+        <button class="screenshot-modal-nav screenshot-modal-next" type="button" aria-label="Next screenshot"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+    </div>
 
         <!-- Link external script -->
         <script src="js/script.js"></script>

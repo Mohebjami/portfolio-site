@@ -37,6 +37,7 @@ const navLinks = document.querySelector('.nav-links');
 
 mobileMenuBtn.addEventListener('click', () => {
     navLinks.classList.toggle('active');
+    mobileMenuBtn.setAttribute('aria-expanded', navLinks.classList.contains('active') ? 'true' : 'false');
     // Change icon based on state
     if (navLinks.classList.contains('active')) {
         mobileMenuBtn.innerHTML = '<i class="fas fa-times"></i>';
@@ -49,6 +50,7 @@ mobileMenuBtn.addEventListener('click', () => {
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('active');
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
         mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
     });
 });
@@ -149,6 +151,104 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+});
+
+// Project screenshot viewer
+const screenshotModal = document.querySelector('#screenshot-modal');
+const modalImage = document.querySelector('#screenshot-modal-image');
+const modalCaption = document.querySelector('#screenshot-modal-caption');
+const modalThumbnails = document.querySelector('#screenshot-modal-thumbnails');
+const closeModalButton = document.querySelector('.screenshot-modal-close');
+const previousScreenshotButton = document.querySelector('.screenshot-modal-prev');
+const nextScreenshotButton = document.querySelector('.screenshot-modal-next');
+const projectShots = [...document.querySelectorAll('.project-shot')];
+const projectViewButtons = [...document.querySelectorAll('.project-view-button')];
+let activeProjectShots = [];
+let activeScreenshotIndex = 0;
+let lastFocusedElement = null;
+
+const showScreenshot = () => {
+    const shot = activeProjectShots[activeScreenshotIndex];
+    modalImage.src = shot.dataset.image;
+    modalImage.alt = shot.dataset.alt;
+    modalCaption.textContent = `${activeScreenshotIndex + 1} of ${activeProjectShots.length} — ${shot.dataset.alt}`;
+    modalThumbnails.querySelectorAll('button').forEach((thumbnail, index) => {
+        const isActive = index === activeScreenshotIndex;
+        thumbnail.classList.toggle('is-active', isActive);
+        thumbnail.setAttribute('aria-selected', isActive ? 'true' : 'false');
+    });
+};
+
+const renderModalThumbnails = () => {
+    modalThumbnails.replaceChildren();
+    activeProjectShots.forEach((shot, index) => {
+        const thumbnail = document.createElement('button');
+        thumbnail.type = 'button';
+        thumbnail.setAttribute('role', 'tab');
+        thumbnail.setAttribute('aria-label', `Show screenshot ${index + 1}: ${shot.dataset.alt}`);
+        thumbnail.setAttribute('aria-selected', index === activeScreenshotIndex ? 'true' : 'false');
+        thumbnail.innerHTML = `<img src="${shot.dataset.image}" alt="">`;
+        thumbnail.addEventListener('click', () => {
+            activeScreenshotIndex = index;
+            showScreenshot();
+        });
+        modalThumbnails.appendChild(thumbnail);
+    });
+};
+
+const closeScreenshotModal = () => {
+    screenshotModal.classList.remove('is-open');
+    screenshotModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    lastFocusedElement?.focus();
+};
+
+const openScreenshotViewer = (shot, returnFocusElement = shot) => {
+    activeProjectShots = projectShots.filter((item) => item.dataset.project === shot.dataset.project);
+    activeScreenshotIndex = activeProjectShots.indexOf(shot);
+    lastFocusedElement = returnFocusElement;
+    renderModalThumbnails();
+    showScreenshot();
+    screenshotModal.classList.add('is-open');
+    screenshotModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    closeModalButton.focus();
+};
+
+projectShots.forEach((shot) => {
+    shot.addEventListener('click', () => {
+        openScreenshotViewer(shot);
+    });
+});
+
+projectViewButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        const featuredShot = projectShots.find((shot) => shot.dataset.project === button.dataset.projectTrigger && shot.classList.contains('project-shot-featured'));
+        if (featuredShot) openScreenshotViewer(featuredShot, button);
+    });
+});
+
+previousScreenshotButton.addEventListener('click', () => {
+    activeScreenshotIndex = (activeScreenshotIndex - 1 + activeProjectShots.length) % activeProjectShots.length;
+    showScreenshot();
+});
+
+nextScreenshotButton.addEventListener('click', () => {
+    activeScreenshotIndex = (activeScreenshotIndex + 1) % activeProjectShots.length;
+    showScreenshot();
+});
+
+closeModalButton.addEventListener('click', closeScreenshotModal);
+
+screenshotModal.addEventListener('click', (event) => {
+    if (event.target === screenshotModal) closeScreenshotModal();
+});
+
+document.addEventListener('keydown', (event) => {
+    if (!screenshotModal.classList.contains('is-open')) return;
+    if (event.key === 'Escape') closeScreenshotModal();
+    if (event.key === 'ArrowLeft') previousScreenshotButton.click();
+    if (event.key === 'ArrowRight') nextScreenshotButton.click();
 });
 
 
