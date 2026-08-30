@@ -2854,3 +2854,16 @@ body.light-mode .project-view-button {
     padding-right: clamp(56px, 18%, 150px);
     padding-left: clamp(56px, 18%, 150px);
 }
+
+/* Desktop application screenshots fill their project covers edge to edge. */
+.project-shot-featured--desktop::before {
+    display: none;
+}
+
+.project-shot-featured--desktop img,
+.project-card--featured .project-shot-featured--desktop img {
+    padding: 0;
+    object-fit: cover;
+    object-position: top left;
+    filter: none;
+}
